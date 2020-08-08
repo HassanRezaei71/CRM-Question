@@ -4,7 +4,7 @@ import initialPollData from "./Data/initialPollData";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import routes from "./Routes/routes";
 
-function App() {
+export default function App() {
   const [pollData, setPollData] = useState(initialPollData);
   const [answers, setAnswers] = useState([]);
 
@@ -35,4 +35,3 @@ function App() {
   );
 }
 
-export default App;

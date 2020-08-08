@@ -1,0 +1,16 @@
+.brand {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 2rem 0;
+  img {
+    max-width: 50px;
+    margin-right: 0.6rem;
+  }
+  h2 {
+    color: #fd5722;
+    font-size: 2.5rem;
+    filter: drop-shadow(1px 1px 0.5px black);
+    transform: translateY(-0.4rem);
+  }
+}

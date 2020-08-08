@@ -3,23 +3,18 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    0deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(192, 203, 221, 1) 0%,
-    rgba(97, 171, 238, 1) 100%
-  );
+  background: rgb(76, 144, 207);
+  background: linear-gradient(0deg, rgb(77, 143, 206) 0%, rgb(59, 80, 117) 0%);
   justify-content: space-around;
   align-items: center;
   background-position: center;
-  color: rgb(75, 75, 75);
-  // .title-container {
-  //   height: 80vh;
-  //   display: flex;
-  //   flex-direction: column;
-  //   justify-content: center;
-  //   align-items: center;
-  //   text-align: center;
-  // }
+  color: white;
+  .title-container {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 }

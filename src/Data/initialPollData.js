@@ -1,7 +1,9 @@
+import logo from '../assets/Pic/tap.png';
+
 const initialData = {
-    organization_name: "Tap30",
-    organization_name_fa: "تپ سی",
-    logo_url: "../assets/Pic/tap30.png",
+    name: "Tap30",
+    name_fa: "تپ سی",
+    src: logo,
     questions: [
       {
         id: "q_1",
