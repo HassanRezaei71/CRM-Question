@@ -1,25 +1,38 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import initialPollData from "./Data/initialPollData";
-import { Route, Switch } from "react-router";
-import routes from './Routes/routes'
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import routes from "./Routes/routes";
 
 function App() {
   const [pollData, setPollData] = useState(initialPollData);
-  // const [answers, setAnswers] = useState([]);
+  const [answers, setAnswers] = useState([]);
 
-  return 
-  (
-    <Switch pollData = {pollData}>
-      {
-        routes.map(route=>(
+  useEffect(() => {
+    const Answers = pollData.questions.map((question) => {
+      return { id: question.id, answer: null };
+    });
+    setAnswers(Answers);
+  }, []);
+
+  const newAnswers = (questionId, answer) => {
+    let newAnswer = [...answers].map((value) =>
+      value.id === questionId ? { id: questionId, answer: answer } : value
+    );
+    setAnswers(newAnswer);
+  };
+
+  return (
+    <Router>
+      <Switch>
+        {routes.map((route) => (
           <Route path={route.path} key={route.path} exact={route.exact}>
-            <route.component />
+            <route.component pollData={pollData} setPollData={setPollData} newAnswers={newAnswers} answers={answers} />
           </Route>
-        ))
-      }
-    </Switch>
-  )
+        ))}
+      </Switch>
+    </Router>
+  );
 }
 
 export default App;

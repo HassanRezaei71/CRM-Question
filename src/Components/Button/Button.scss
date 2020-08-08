@@ -1,0 +1,21 @@
+.btn {
+  background-image: linear-gradient(to right, #f197bd 18%, #ed865d 100%);
+  font-family: "Yekan";
+  font-size: 2rem;
+  padding: 0.8rem 4rem;
+  color: #e3e3e3;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  margin-top: 2rem;
+  border-radius: 50px;
+  transition: all 0.4s;
+
+  &:hover {
+    transform: scale(1.04);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
