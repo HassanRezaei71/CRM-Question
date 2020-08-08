@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import initialPollData from "./Data/initialPollData";
+import { Route, Switch } from "react-router";
+import routes from './Routes/routes'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const [pollData, setPollData] = useState(initialPollData);
+  // const [answers, setAnswers] = useState([]);
+
+  return 
+  (
+    <Switch pollData = {pollData}>
+      {
+        routes.map(route=>(
+          <Route path={route.path} key={route.path} exact={route.exact}>
+            <route.component />
+          </Route>
+        ))
+      }
+    </Switch>
+  )
 }
 
 export default App;
