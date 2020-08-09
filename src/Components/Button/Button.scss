@@ -1,5 +1,4 @@
 .btn {
-  // background-image: linear-gradient(to right, #f388b4 18%, #f17a4b 100%);
   background-color: #12ad33;
   font-family: "Yekan";
   font-size: 1.5rem;
@@ -14,6 +13,7 @@
 
   &:hover {
     transform: scale(1.04);
+    background-color: #18d842;
   }
 
   &:focus {

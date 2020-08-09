@@ -1,0 +1,23 @@
+.Step {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #f197bd;
+    transition: all 0.3s;
+    @media (max-width: 600px) {
+      width: 15px;
+      height: 15px;
+    }
+  }
+  
+  .Step-done {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #d8d8d8;
+    transition: all 0.3s;
+    @media (max-width: 600px) {
+      width: 15px;
+      height: 15px;
+    }
+  }
