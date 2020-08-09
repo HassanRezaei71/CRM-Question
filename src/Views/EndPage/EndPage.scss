@@ -1,0 +1,25 @@
+.End {
+  width: 100vw;
+  height: 100vh;
+  padding:0 2rem;
+  text-align: center;
+  background: rgb(76, 144, 207);
+  background: linear-gradient(0deg, rgb(77, 143, 206) 0%, rgb(59, 80, 117) 0%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  .container{
+      height: 70vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+  }
+  .title{
+      margin-top: 2rem;
+    color: #e3e3e3;
+    @media (max-width:600px) {
+        font-size: 1.5rem;
+    }
+  }
+}
