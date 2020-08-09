@@ -15,9 +15,9 @@ export default function App() {
     setAnswers(Answers);
   }, []);
 
-  const newAnswers = (questionId, answer) => {
-    let newAnswer = [...answers].map((value) =>
-      value.id === questionId ? { id: questionId, answer: answer } : value
+  const setNewAnswer = (questionId, answerKey) => {
+    let newAnswer = [...answers].map((item) =>
+      item.id === questionId ? { id: questionId, answer: answerKey } : item
     );
     setAnswers(newAnswer);
   };
@@ -27,7 +27,7 @@ export default function App() {
       <Switch>
         {routes.map((route) => (
           <Route path={route.path} key={route.path} exact={route.exact}>
-            <route.component pollData={pollData} setPollData={setPollData} newAnswers={newAnswers} answers={answers} />
+            <route.component pollData={pollData} setPollData={setPollData} setNewAnswer={setNewAnswer} answers={answers} />
           </Route>
         ))}
       </Switch>

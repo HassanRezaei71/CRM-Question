@@ -1,0 +1,28 @@
+.answer-button {
+  direction: rtl;
+  background-color: #12ad33;
+  color: #e3e3e3;
+  font-size: 1.6rem;
+  font-family: "Yekan";
+  border: none;
+  border-radius: 50px;
+  padding: 0.4rem 1rem;
+  margin: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  min-width: 120px;
+  filter: drop-shadow(2px 2px 7px black);
+  font-weight: bold;
+  @media (max-width:600px) {
+    font-size: 1.4rem;
+  }
+
+  &:hover {
+    background-color: #18d842;
+    transform: translateY(0.2rem);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
