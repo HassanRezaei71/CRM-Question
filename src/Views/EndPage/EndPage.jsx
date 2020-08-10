@@ -3,7 +3,8 @@ import './EndPage.scss'
 import Brand from '../../Components/Brand/Brand';
 import Info from '../../Components/Info/Info';
 
-export default function EndPage({pollData}) {
+export default function EndPage({pollData,answers}) {
+  console.log(answers);
   return (
     <div className="End">
       <div className="container">

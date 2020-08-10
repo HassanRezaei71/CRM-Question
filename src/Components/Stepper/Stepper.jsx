@@ -4,7 +4,6 @@ import Step from "../Step/Step";
 import { NavLink } from "react-router-dom";
 
 export default function Stepper({ answers, pollData }) {
-  console.log(answers);
   return (
     <div className="Stepper">
       {pollData.questions.map((question) => (
