@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/CRM-Question/static/css/main.cb810d9b.chunk.css",
+    "main.js": "/CRM-Question/static/js/main.ce4c2d02.chunk.js",
+    "main.js.map": "/CRM-Question/static/js/main.ce4c2d02.chunk.js.map",
+    "runtime-main.js": "/CRM-Question/static/js/runtime-main.809aabfd.js",
+    "runtime-main.js.map": "/CRM-Question/static/js/runtime-main.809aabfd.js.map",
+    "static/js/2.be1f75f6.chunk.js": "/CRM-Question/static/js/2.be1f75f6.chunk.js",
+    "static/js/2.be1f75f6.chunk.js.map": "/CRM-Question/static/js/2.be1f75f6.chunk.js.map",
+    "index.html": "/CRM-Question/index.html",
+    "precache-manifest.5169d63e445a8a77b85c3d5bb3aabb8e.js": "/CRM-Question/precache-manifest.5169d63e445a8a77b85c3d5bb3aabb8e.js",
+    "service-worker.js": "/CRM-Question/service-worker.js",
+    "static/css/main.cb810d9b.chunk.css.map": "/CRM-Question/static/css/main.cb810d9b.chunk.css.map",
+    "static/js/2.be1f75f6.chunk.js.LICENSE.txt": "/CRM-Question/static/js/2.be1f75f6.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/CRM-Question/static/media/Yekan.080f937c.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.809aabfd.js",
+    "static/js/2.be1f75f6.chunk.js",
+    "static/css/main.cb810d9b.chunk.css",
+    "static/js/main.ce4c2d02.chunk.js"
+  ]
+}
