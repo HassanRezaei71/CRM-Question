@@ -9,6 +9,10 @@ const routes = [
     component: StartPage,
   },
   {
+    path: "/crm-question",
+    component: StartPage,
+  },
+  {
     path: "/question/:id",
     component: Question,
   },
